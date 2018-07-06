@@ -20,6 +20,12 @@ public class Args  {
     public Stream<Expression> get() {
         return Arrays.stream(args);
     }
+    public Expression first() { return args[0]; }
+    public Expression second() { return args[1]; }
+
+    public int size() {
+        return args.length;
+    }
 
     @Override
     public String toString(){

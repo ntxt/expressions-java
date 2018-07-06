@@ -2,15 +2,13 @@ package net.ntxt.expressions.operators;
 
 import net.ntxt.expressions.Context;
 import net.ntxt.expressions.ExpLeaf;
-import net.ntxt.expressions.ExpNode;
 import net.ntxt.expressions.Operator;
 import net.ntxt.expressions.evaluation.Valid;
-import net.ntxt.expressions.model.*;
+import net.ntxt.expressions.model.Args;
+import net.ntxt.expressions.model.ValBoolean;
+import net.ntxt.expressions.model.ValNumeric;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class BoolOpsTest {
 

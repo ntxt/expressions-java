@@ -1,7 +1,5 @@
 package net.ntxt.expressions;
 
-import java.sql.Date;
-
 /** a terminal node of evalutation tree */
 public interface ExpLeaf extends Expression {
 
@@ -15,4 +13,6 @@ public interface ExpLeaf extends Expression {
     default ExpLeaf evaluate(Context context) {
         return this;
     }
+
+
 }
