@@ -5,14 +5,14 @@ import net.ntxt.expressions.operators.BoolOps;
 
 public class And extends AbstractExpNode {
 
-    public And(Expression... exps){
+    public And(Expression... exps) {
         this(new Args(exps));
     }
 
-    public And(Args args){
+    public And(Args args) {
         this.op = BoolOps.And;
         this.args = args;
-        getOp().validOrThrow(args);
+        this.op.validOrThrow(args);
     }
 
 

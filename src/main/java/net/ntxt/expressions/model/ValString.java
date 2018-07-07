@@ -10,7 +10,7 @@ public class ValString implements ExpLeaf {
     private Type type;
 
 
-    public ValString(Number val) {
+    public ValString(String val) {
         if(val == null) {
             throw new IllegalArgumentException("Cannot create ValString from null");
         }
